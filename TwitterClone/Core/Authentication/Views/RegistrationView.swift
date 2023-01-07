@@ -16,53 +16,56 @@ struct RegistrationView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        VStack {
-            
-            NavigationLink(destination: ProfilePhotoSelectorView(), isActive: $viewModel.didAuthenticateUser, label: { })
-            
-            AuthHeaderView(title1: "Get started.", title2: "Create your account")
-            
-            VStack(spacing: 40) {
-                CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
+        NavigationStack {
+            VStack {
                 
-                CustomInputField(imageName: "person", placeholderText: "Username", text: $username)
+                AuthHeaderView(title1: "Get started.", title2: "Create your account")
                 
-                CustomInputField(imageName: "person", placeholderText: "Full name", text: $fullname)
-                
-                CustomInputField(imageName: "lock", placeholderText: "Password", isSecureField: true, text: $password)
-            }
-            .padding(32)
-            
-            Button {
-                viewModel.register(withEmail: email, password: password, fullname: fullname, username: username)
-            } label: {
-                Text("Sign Up")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(width: 300, height: 50)
-                    .background(Color(.systemBlue))
-                    .clipShape(Capsule())
-                    .padding()
-            }
-            .shadow(color: .gray.opacity(0.5), radius: 10, x:0, y:0)
-            
-            Spacer()
-            
-            Button {
-                presentationMode.wrappedValue.dismiss()
-            } label: {
-                HStack {
-                    Text("Already have an account?")
-                        .font(.footnote)
+                VStack(spacing: 40) {
+                    CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
                     
-                    Text("Sign In")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
+                    CustomInputField(imageName: "person", placeholderText: "Username", text: $username)
+                    
+                    CustomInputField(imageName: "person", placeholderText: "Full name", text: $fullname)
+                    
+                    CustomInputField(imageName: "lock", placeholderText: "Password", isSecureField: true, text: $password)
                 }
+                .padding(32)
+                
+                Button {
+                    viewModel.register(withEmail: email, password: password, fullname: fullname, username: username)
+                } label: {
+                    Text("Sign Up")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(width: 300, height: 50)
+                        .background(Color(.systemBlue))
+                        .clipShape(Capsule())
+                        .padding()
+                }
+                .shadow(color: .gray.opacity(0.5), radius: 10, x:0, y:0)
+                
+                Spacer()
+                
+                Button {
+                    presentationMode.wrappedValue.dismiss()
+                } label: {
+                    HStack {
+                        Text("Already have an account?")
+                            .font(.footnote)
+                        
+                        Text("Sign In")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                    }
+                }
+                .padding(.bottom, 32)
             }
-            .padding(.bottom, 32)
+            .ignoresSafeArea()
+            .navigationDestination(isPresented: $viewModel.didAuthenticateUser) {
+                            ProfilePhotoSelectorView()
+                    }
         }
-        .ignoresSafeArea()
     }
 }
 

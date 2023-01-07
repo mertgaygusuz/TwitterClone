@@ -17,14 +17,15 @@ struct ImageUploader {
         let filename = NSUUID().uuidString
         let ref = Storage.storage().reference(withPath: "/profile_image/\(filename)")
         
-        ref.putData(imageData, metadata: nil) { _, error in
+        
+        ref.putData(imageData) { _, error in
             if let error = error {
                 print("failed to upload image: \(error.localizedDescription)")
                 return
             }
             
             ref.downloadURL { imageUrl, _ in
-                guard let imageUrl = imageUrl?.absoluteString else { return }
+                guard let imageUrl = imageUrl?.absoluteString else{ return }
                 completion(imageUrl)
             }
         }
