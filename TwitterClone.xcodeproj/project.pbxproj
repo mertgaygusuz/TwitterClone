@@ -13,6 +13,7 @@
 		9D0399A42964B2A900AF10D5 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0399A32964B2A900AF10D5 /* ImageUploader.swift */; };
 		9D0E536E2961AC4C00617408 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E536D2961AC4C00617408 /* ProfilePhotoSelectorView.swift */; };
 		9D0E53712961B52C00617408 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E53702961B52C00617408 /* ImagePicker.swift */; };
+		9D2EC9D7296AE86C003FA7C3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2EC9D6296AE86B003FA7C3 /* SearchBar.swift */; };
 		9D355E13296A064600E59D26 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D355E12296A064600E59D26 /* ExploreViewModel.swift */; };
 		9D403F242956FF5100249C84 /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D403F232956FF5100249C84 /* NewTweetView.swift */; };
 		9D403F26295701D000249C84 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D403F25295701D000249C84 /* TextArea.swift */; };
@@ -49,6 +50,7 @@
 		9D0399A32964B2A900AF10D5 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		9D0E536D2961AC4C00617408 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		9D0E53702961B52C00617408 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9D2EC9D6296AE86B003FA7C3 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		9D355E12296A064600E59D26 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		9D403F232956FF5100249C84 /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
 		9D403F25295701D000249C84 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				9D403F25295701D000249C84 /* TextArea.swift */,
 				9DE211412957151E00B2AB11 /* RoundedShape.swift */,
 				9DE2114329571C2700B2AB11 /* CustomInputField.swift */,
+				9D2EC9D6296AE86B003FA7C3 /* SearchBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				9D769326294DC9A8004C53EF /* TwitterCloneApp.swift in Sources */,
 				9D769348294DD718004C53EF /* ExploreView.swift in Sources */,
 				9DB0101C2950AB8700614389 /* SideMenuViewModel.swift in Sources */,
+				9D2EC9D7296AE86C003FA7C3 /* SearchBar.swift in Sources */,
 				9D403F26295701D000249C84 /* TextArea.swift in Sources */,
 				9DB010202950B9B100614389 /* SideMenuOptionRowView.swift in Sources */,
 				9DE2113C29570F2C00B2AB11 /* LoginView.swift in Sources */,
