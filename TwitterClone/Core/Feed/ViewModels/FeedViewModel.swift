@@ -8,8 +8,7 @@
 import Foundation
 
 class FeedViewModel: ObservableObject {
-    
-    
+    @Published var tweets = [Tweet]()
     let service = TweetService()
     
     init() {
@@ -17,6 +16,8 @@ class FeedViewModel: ObservableObject {
     }
     
     func fetchTweets() {
-        service.fetchTweet()
+        service.fetchTweet { tweets in
+            self.tweets = tweets
+        }
     }
 }
