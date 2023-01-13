@@ -105,7 +105,7 @@ extension ProfileView {
                 .font(.subheadline)
                 .foregroundColor(.gray)
             
-            Text("Benim de kendime göre rüyalarım, hayallerim var")
+            Text("Backend & iOS Developer")
                 .font(.subheadline)
                 .padding(.vertical)
             

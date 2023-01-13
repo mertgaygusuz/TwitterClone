@@ -21,7 +21,7 @@ struct UserStatsView: View {
             }
             
             HStack(spacing: 4) {
-                Text("1.2M")
+                Text("294")
                     .font(.subheadline)
                     .bold()
                 
