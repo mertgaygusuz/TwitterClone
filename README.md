@@ -23,7 +23,7 @@ An application with some functions of Twitter.
 ```
 
 # Screens
-<img height = 400 width = full src="images/1.png">  <img height = 400 width = full src="images/2.png"> <img height = 400 width = full src="images/3.png">
- <img height = 400 width = full src="images/4.png"> <img height = 400 width = full src="images/5.png"> <img height = 400 width = full src="images/6.png">
-  <img height = 400 width = full src="images/7.png"> <img height = 400 width = full src="images/8.png"> <img height = 400 width = full src="images/9.png">
-  <img height = 400 width = full src="images/10.png">
+<img height = 350 width = full src="images/1.png">  <img height = 350 width = full src="images/2.png"> <img height = 350 width = full src="images/3.png">
+ <img height = 350 width = full src="images/4.png"> <img height = 350 width = full src="images/5.png"> <img height = 350 width = full src="images/6.png">
+  <img height = 350 width = full src="images/7.png"> <img height = 350 width = full src="images/8.png"> <img height = 350 width = full src="images/9.png">
+  <img height = 350 width = full src="images/10.png">
